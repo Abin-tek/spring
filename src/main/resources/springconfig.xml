@@ -6,6 +6,9 @@
 
 
     <bean id="st1" class="org.example.Student">
+        <property name="age" value="30"/>
+        <property name="rno" value="23"/>
+        <property name="pen" ref="p1"/>
     </bean>
 
     <bean id="st2" class="org.example.Student">
@@ -16,5 +19,7 @@
 
     <bean id="st3" class="org.example.Student">
     </bean>
+
+    <bean id="p1" class="org.example.Pen"/>
 
 </beans>
