@@ -15,11 +15,12 @@ public class App
 
 //        System.out.println( "Hello World!" );
 
-        Student student = (Student) context.getBean("st1");
+        Student perusu = (Student) context.getBean("st1");
+        Student sirusu = (Student) context.getBean("st2");
 
-        student.show();
 //        student.setAge(30);
 //        System.out.println(student.getAge() + " : " + student.getRno());
-        student.writeExam();
+        perusu.writeExam();
+        sirusu.writeExam();
     }
 }
