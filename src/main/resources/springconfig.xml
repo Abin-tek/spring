@@ -5,7 +5,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <bean id="st1" class="org.example.Student" autowire="byName">
+    <bean id="st1" class="org.example.Student" autowire="byType">
 <!--        <property name="writer" ref="pen"/>-->
     </bean>
 
@@ -14,7 +14,7 @@
     </bean>
 
     <bean id="pen" class="org.example.Pen" primary="true"/>
-    <bean id="pencil" class="org.example.Pencil"/>
+    <bean id="pencil" class="org.example.Pencil" />
     <bean id="sketch" class="org.example.Sketch"/>
 
 </beans>
